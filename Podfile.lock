@@ -1,0 +1,16 @@
+PODS:
+  - LinkAccount (1.0.17)
+
+DEPENDENCIES:
+  - LinkAccount
+
+SPEC REPOS:
+  trunk:
+    - LinkAccount
+
+SPEC CHECKSUMS:
+  LinkAccount: adf1fd66173a0e3c5bf5ef95ca1b40d0b055273f
+
+PODFILE CHECKSUM: fddb74e92d325b695129a3c2714405a0de13f0fc
+
+COCOAPODS: 1.11.3

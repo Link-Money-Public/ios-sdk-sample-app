@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>MerchantBackendBaseULR</key>
+	<string>https://api.merchant.com</string>
+	<key>MerchantBackendAccessTokenPath</key>
+	<string>/api/access-token</string>
+	<key>MerchantBackendSessionKeyPath</key>
+	<string>/api/get-session-key</string>
+	<key>MerchantBackendPaymentPath</key>
+	<string>/api/make-payment</string>
+	<key>MerchantBackendClientId</key>
+	<string>&lt;client_id&gt;</string>
+	<key>MerchantBackendClientSecret</key>
+	<string>&lt;client_secret&gt;</string>
+	<key>MerchantId</key>
+	<string>&lt;merchant_id&gt;</string>
+	<key>LinkEnvironment</key>
+	<string>sandbox | production</string>
+</dict>
+</plist>
