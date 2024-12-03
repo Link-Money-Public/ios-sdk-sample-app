@@ -1,10 +1,20 @@
-# Uncomment the next line to define a global platform for your project
-# platform :ios, '9.0'
+platform :ios, '14.0'
 
-target 'link-sdk-demo' do
-  # Comment the next line if you don't want to use dynamic frameworks
-  use_frameworks!
+workspace 'ios-sdk-sample.xcworkspace'
+use_frameworks!
 
-  # Pods for link-sdk-demo
-  pod 'LinkAccount'
+module 'SampleAppShared'
+project 'merchant-managed-payment/merchant-managed-payment.xcodeproj'
+project 'link-managed-payment/link-managed-payment.xcodeproj'
+
+abstract_target 'ios-sdk-sample' do
+    pod 'LinkAccount', '~> 3.0.2'
+
+    target 'merchant-managed-payment' do
+        project 'merchant-managed-payment/merchant-managed-payment.xcodeproj'
+    end
+
+    target 'link-managed-payment' do 
+        project 'link-managed-payment/link-managed-payment.xcodeproj'
+    end
 end
